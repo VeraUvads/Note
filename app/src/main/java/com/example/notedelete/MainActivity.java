@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewNotes = findViewById(R.id.recyclerView);
         dbHelper = new NotesDBHelper(this);
         SQLiteDatabase database = dbHelper.getWritableDatabase();
+
         if (notesList.isEmpty()) {
             notesList.add(new Note("Парикмахер", "Сделать прическу", 2, "Понедельник"));
             notesList.add(new Note("Баскетбол", "Игра со школьной командой", 1, "Вторник"));
@@ -61,22 +62,21 @@ public class MainActivity extends AppCompatActivity {
             Note note = new Note(title, description, priority, day_of_week);
             notesFromDB.add(note);
         }
+
         cursor.close();
         recyclerViewNotes.setLayoutManager(new LinearLayoutManager(this));
         adapter = new NotesAdapter(notesFromDB);
         recyclerViewNotes.setAdapter(adapter);
         adapter.setOnNoteClickListener(new NotesAdapter.OnNoteClickListener() {
-
             @Override
             public void onNoteClick(int position) {
-
             }
 
             @Override
             public void onLongClick(int position) {
-
             }
         });
+
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
             @Override
             public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
