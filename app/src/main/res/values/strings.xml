@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NoteDelete</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="_1">1</string>
+    <string name="Priority2">2</string>
+    <string name="Priority3">3</string>
+    <string name="save">Save</string>
+    <string-array name="DaysOfWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Sunday</item>
+        <item>Saturday</item>
+    </string-array>
+
+</resources>
