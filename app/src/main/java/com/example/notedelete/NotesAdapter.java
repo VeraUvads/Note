@@ -39,7 +39,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     @Override
     public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
         Note note = notes.get(position);
-        holder.textViewData.setText(note.getData());
+        holder.textViewData.setText(Note.getDayAsString(note.getData()));
         holder.textViewDescription.setText(note.getDescription());
         holder.textViewTitle.setText(note.getTitle());
         int colorId;

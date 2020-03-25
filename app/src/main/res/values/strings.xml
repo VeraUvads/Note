@@ -6,6 +6,7 @@
     <string name="Priority2">2</string>
     <string name="Priority3">3</string>
     <string name="save">Save</string>
+    <string name="warming_empty_fields">Заполните все поля</string>
     <string-array name="DaysOfWeek">
         <item>Monday</item>
         <item>Tuesday</item>

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-NoteDelete.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-NoteDelete.iml" group="NoteDelete" />
+      <module fileurl="file://$PROJECT_DIR$/app/Note-app.iml" filepath="$PROJECT_DIR$/app/Note-app.iml" group="NoteDelete/app" />
       <module fileurl="file://$PROJECT_DIR$/NoteDelete.iml" filepath="$PROJECT_DIR$/NoteDelete.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
